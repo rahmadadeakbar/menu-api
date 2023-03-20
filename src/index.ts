@@ -35,6 +35,9 @@ app.use(express.json());
 
 app.use("/api/menu/items", itemsRouter);
 
+app.use(errorHandler);
+app.use(notFoundHandler);
+
 
 /**
  * Server Activation
